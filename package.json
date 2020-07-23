@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
-    "build-prod": "webpack --config webpack.prod.js --watch",
+    "build-prod": "webpack --config webpack.prod.js",
     "build-server": "webpack-dev-server --config webpack.dev.js --open firefox",
     "build-dev": "webpack --config webpack.dev.js --open firefox"
   },
@@ -24,9 +24,12 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
     "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.7",
     "webpack-dev-server": "^3.11.0"
   }
 }
